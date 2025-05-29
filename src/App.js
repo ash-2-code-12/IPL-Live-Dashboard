@@ -17,6 +17,7 @@ import {FaMoon} from 'react-icons/fa'
 import {FiSun} from 'react-icons/fi'
 
 
+
 import {AppContainer, Header, ContentContainer, StatsPredictorSection, StatsRecentDSection, Seperator, RedSpan, BlueSpan, Toggler} from './styledComponents'
 import Scoreboard from "./components/ScoreBoard";
 
@@ -76,7 +77,7 @@ function App() {
       <GlobalStyle isDarkTheme={isDarkTheme} />
       <AppContainer>
         <Header>
-          <img src="/ipl-app-logo.png" alt="app-logo" />
+          <img src={process.env.PUBLIC_URL + '/ipl-app-logo.png'} alt="app-logo" />
           <button onClick={toggleTheme}>
             {isDarkTheme ? (
               <FiSun size="28" color="#ffffff" />
