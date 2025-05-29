@@ -136,7 +136,7 @@ const addWicket = () => {
         setPlayersInField,
         playerStatsData, 
         setPlayerStatsData,
-        speed: 2000,
+        speed: 1000,
     }
     
     return (
